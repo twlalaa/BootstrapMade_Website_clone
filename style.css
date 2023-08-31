@@ -8,11 +8,17 @@
 }
 
 .body-top {
-  background-color: #023b6d;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1px;
+}
+
+.dark-blue-bg {
+  background-color: #023b6d;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .body-top-left {
@@ -58,6 +64,7 @@
   display: flex;
   align-items: center;
   color: #fff;
+  padding-right: 500px;
 }
 
 .body-top-middle p {
@@ -88,13 +95,18 @@
 }
 
 .external-link {
-  opacity: 0.5;
   cursor: pointer;
-  margin-right: 12px;
+  padding: 6px;
+  background-color: #023b6d;
+}
+
+.external-link i {
+  margin-right: 5px;
+  opacity: 0.5;
   transition: all 0.5s linear;
 }
 
-.external-link:hover {
+.external-link:hover i {
   opacity: 1;
 }
 
@@ -102,11 +114,18 @@
   text-transform: uppercase;
   cursor: pointer;
   background-color: #00a6eb;
-  padding: 5px;
+  padding: 6px;
+  white-space: nowrap;
+  padding-left: 10px;
+  transition: all 0.5s linear;
 }
 
 .download i {
   margin-right: 10px;
+}
+
+.download:hover {
+  background-color: #47b2e4;
 }
 
 header {
@@ -116,6 +135,9 @@ header {
   background-color: #37517e;
   padding: 10px 90px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .header-logo {
@@ -230,6 +252,11 @@ nav ul li:hover a {
 .video i {
   margin-right: 7px;
   font-size: 32px;
+  transition: all 0.3s linear;
+}
+
+.video i:hover {
+  color: #00a6eb;
 }
 
 .sectionOneRight {
@@ -328,7 +355,7 @@ nav ul li:hover a {
 }
 
 .sectionThreeLeft ul li i {
-  color: #00a6eb;
+  color: #47b2e4;
   margin-right: 5px;
 }
 
@@ -366,4 +393,73 @@ nav ul li:hover a {
   bottom: -11px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.sectionFour {
+  background-color: #f3f5fa;
+  display: flex;
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 0;
+}
+
+.sectionFourRight {
+  width: 50%;
+  height: 510px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png);
+}
+
+.sectionFourLeft {
+  padding-top: 60px;
+  width: 50%;
+  padding: 30px;
+}
+
+.fourOne {
+  font-size: 30px;
+  color: #37517e;
+  margin-bottom: 5px;
+}
+
+.fourTwo {
+  color: #848484;
+  margin-bottom: 15px;
+}
+
+.accordionTitle {
+  padding: 20px 20px;
+  background-color: #fff;
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.accordionTitle:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.accordionNumber {
+  font-size: 18px;
+  color: #47b2e4;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.accordion-title-left {
+  display: flex;
+  align-items: center;
+}
+
+.accordionBtn {
+  color: #000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
 }
